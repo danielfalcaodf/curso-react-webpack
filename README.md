@@ -14,7 +14,8 @@ Projeto de estudos do **módulo gratuito do curso [React Ninja](https://www.udem
 ## 🛠️ Tecnologias utilizadas
 
 - [Node.js](https://nodejs.org/)
-- [React.js](https://react.dev/)
+- [React.js 15.x](https://legacy.reactjs.org/)
+- [ReactDOM 15.x](https://legacy.reactjs.org/docs/react-dom.html)
 - [Webpack 1.x](https://webpack.github.io/)
 - [Webpack Dev Server 1.x](https://github.com/webpack/webpack-dev-server)
 
@@ -48,10 +49,10 @@ Com o `webpack-dev-server`, a aplicação fica disponível em `http://localhost:
 ```
 curso-react-webpack/
 ├── src/
-│   ├── index.js        # Ponto de entrada da aplicação
-│   └── app.js          # Módulo com lógica separada (ex: função sum)
+│   ├── index.js        # Ponto de entrada — monta o componente React no DOM
+│   └── app.js          # Componente React (Title) criado com React.createClass
 ├── dist/               # Saída do bundle (gerado pelo Webpack, ignorado no git)
-├── index.html          # Página HTML que carrega o bundle
+├── index.html          # Página HTML com o ponto de montagem do React
 ├── webpack.config.js   # Configuração do Webpack
 └── package.json
 ```
@@ -63,7 +64,7 @@ curso-react-webpack/
 - **Configuração do `publicPath`** para servir o bundle em um caminho virtual (`static/`)
 - **Uso do Webpack Dev Server** para servir a aplicação localmente sem gerar arquivos em disco
 - **Modularização de aplicação** — separar responsabilidades em módulos com `module.exports` e `require`
-- Diferença entre configuração manual e ferramentas prontas (CRA, Vite)
+- **Criando uma aplicação React** — uso de `React.createClass`, `React.createElement` e `ReactDOM.render` para renderizar componentes no DOM
 
 ## 🔗 Referências
 
