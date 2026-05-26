@@ -48,7 +48,8 @@ Com o `webpack-dev-server`, a aplicação fica disponível em `http://localhost:
 ```
 curso-react-webpack/
 ├── src/
-│   └── index.js        # Ponto de entrada da aplicação
+│   ├── index.js        # Ponto de entrada da aplicação
+│   └── app.js          # Módulo com lógica separada (ex: função sum)
 ├── dist/               # Saída do bundle (gerado pelo Webpack, ignorado no git)
 ├── index.html          # Página HTML que carrega o bundle
 ├── webpack.config.js   # Configuração do Webpack
@@ -61,6 +62,7 @@ curso-react-webpack/
 - Conceitos de `entry`, `output` e geração de bundle
 - **Configuração do `publicPath`** para servir o bundle em um caminho virtual (`static/`)
 - **Uso do Webpack Dev Server** para servir a aplicação localmente sem gerar arquivos em disco
+- **Modularização de aplicação** — separar responsabilidades em módulos com `module.exports` e `require`
 - Diferença entre configuração manual e ferramentas prontas (CRA, Vite)
 
 ## 🔗 Referências
