@@ -16,6 +16,7 @@ Projeto de estudos do **módulo gratuito do curso [React Ninja](https://www.udem
 - [Node.js](https://nodejs.org/)
 - [React.js](https://react.dev/)
 - [Webpack 1.x](https://webpack.github.io/)
+- [Webpack Dev Server 1.x](https://github.com/webpack/webpack-dev-server)
 
 ## 📋 Pré-requisitos
 
@@ -35,9 +36,12 @@ npm install
 
 # Gere o bundle
 npx webpack
+
+# Ou inicie o servidor de desenvolvimento
+npx webpack-dev-server
 ```
 
-O bundle será gerado em `dist/bundle.js`. Abra o arquivo `index.html` no browser para ver o resultado.
+Com o `webpack-dev-server`, a aplicação fica disponível em `http://localhost:8080` e o bundle é servido em `http://localhost:8080/static/bundle.js`.
 
 ## 📁 Estrutura do projeto
 
@@ -55,7 +59,8 @@ curso-react-webpack/
 
 - Como configurar o Webpack manualmente para projetos React
 - Conceitos de `entry`, `output` e geração de bundle
-- Configuração do Webpack Dev Server e Hot Reload
+- **Configuração do `publicPath`** para servir o bundle em um caminho virtual (`static/`)
+- **Uso do Webpack Dev Server** para servir a aplicação localmente sem gerar arquivos em disco
 - Diferença entre configuração manual e ferramentas prontas (CRA, Vite)
 
 ## 🔗 Referências
